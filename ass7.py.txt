@@ -1,0 +1,99 @@
+Assignment 1:
+
+# initializing dictionary
+port1 = {21:"FTP",22:"SSH",23:"telet",80:"http"}
+
+new_dict = dict([(value, key) for key, value in port1.items()])
+
+# Printing original dictionary
+print("Original dictionary is : ")
+print(port1)
+
+print()
+
+# Printing new dictionary after swapping keys and values
+print("Dictionary after swapping is :  ")
+print("keys: values")
+for i in new_dict:
+    print(i, " :  ", new_dict[i])
+
+
+output:
+C:\Users\mypc\PycharmProjects\untitled1\venv\Scripts\python.exe C:/Users/mypc/PycharmProjects/untitled1/ass7.py
+Original dictionary is : 
+{21: 'FTP', 22: 'SSH', 23: 'telet', 80: 'http'}
+
+Dictionary after swapping is :  
+keys: values
+FTP  :   21
+SSH  :   22
+telet  :   23
+http  :   80
+
+Process finished with exit code 0
+
+
+
+Assignment 2:
+list1=[(1,2),(3,4),(5,6),(4,5)]
+list2=[sum(i) for i in list1]
+print(list2)
+
+output:
+C:\Users\mypc\PycharmProjects\untitled1\venv\Scripts\python.exe C:/Users/mypc/PycharmProjects/untitled1/ass7a.py
+[3, 7, 11, 9]
+
+Process finished with exit code 0
+
+
+Assignment 3:
+
+lst=[(1,2,3),[1,2],['a','hit','less']]
+
+res=[]
+for i in  lst:
+   if  type(i)==type(lst):
+      res = res+i
+   elif type(i)==tuple:
+     res.extend(i)
+     res.extend(i)
+   else:
+     res.append(i)
+print(res)
+
+
+
+output:
+C:\Users\mypc\PycharmProjects\untitled1\venv\Scripts\python.exe C:/Users/mypc/PycharmProjects/untitled1/ass7b.py
+[1, 2, 3, 1, 2, 3, 1, 2, 'a', 'hit', 'less']
+
+Process finished with exit code 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
